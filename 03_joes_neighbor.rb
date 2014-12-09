@@ -33,3 +33,9 @@ people = {
 #   Summers
 #
 # HINT: Start by finding who joe is sitting next to, then find that person in the hash.
+
+people.each {|key, value|
+  if value[:sitting_next_to] == :joe
+    puts value[:last_name]
+  end
+}

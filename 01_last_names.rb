@@ -31,3 +31,5 @@ people = {
 # Expected output is:
 #   Jenkins
 #   Summers
+
+people.each {|key, value| puts value[:last_name]}
